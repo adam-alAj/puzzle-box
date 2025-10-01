@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Success!</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="stylesuccess.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+</head>
+
+<body class="box">
+
+    <div class="textContent">
+    </div>
+
+    <div class="box">
+        <div class="congratulations">
+            <h1 class="congFont">🎉 Congratulations! The Puzzle Has Been Solved!</h1>
+            <p class="congFont">You have successfully completed the challenge. To open the box, please follow the
+                steps
+                below:</p>
+        </div>
+
+
+        <hr>
+        <div class="instructions-section">
+            <h2 class="emilys-candy-regular">Box Opening Instructions:</h2>
+
+            <ol class="opening-steps" id="opening-steps-list">
+                <li class="step active" id="step-1">There are two long strips on the sides of the box (see images
+                    below).
+                    <button class="next-step-button" data-step="1">
+                        <span>NEXT STEP</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+                            <polygon points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"></polygon>
+                            <polygon points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"></polygon>
+                            <polygon points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"></polygon>
+                        </svg>
+                    </button>
+                </li>
+                <li class="step not-completed" id="step-2">Find the two strips and pull them outward.
+                    <button class="next-step-button" data-step="2">
+                        <span>NEXT STEP</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+                            <polygon points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"></polygon>
+                            <polygon points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"></polygon>
+                            <polygon points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"></polygon>
+                        </svg>
+                    </button>
+                </li>
+                <li class="step not-completed" id="step-3">Slide the bottom lid straight down until it catches.
+                    <button class="next-step-button" data-step="3">
+                        <span>NEXT STEP</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+                            <polygon points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"></polygon>
+                            <polygon points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"></polygon>
+                            <polygon points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"></polygon>
+                        </svg>
+                    </button>
+                </li>
+                <li class="step not-completed" id="step-4">Push the two strips back into place.
+                    <button class="next-step-button" data-step="4">
+                        <span>NEXT STEP</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+                            <polygon points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"></polygon>
+                            <polygon points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"></polygon>
+                            <polygon points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"></polygon>
+                        </svg>
+                    </button>
+                </li>
+                <li class="step not-completed" id="step-5">Hold the bottom lid still and pull the rest of the box up
+                    from the top
+                    cover.
+                    <button class="next-step-button" data-step="5">
+                        <span>NEXT STEP</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 43">
+                            <polygon points="39.58,4.46 44.11,0 66,21.5 44.11,43 39.58,38.54 56.94,21.5"></polygon>
+                            <polygon points="19.79,4.46 24.32,0 46.21,21.5 24.32,43 19.79,38.54 37.15,21.5"></polygon>
+                            <polygon points="0,4.46 4.53,0 26.42,21.5 4.53,43 0,38.54 17.36,21.5"></polygon>
+                        </svg>
+                    </button>
+                </li>
+                <li class="final-message" id="final-message" style="display: none;">
+                    <strong><span> Congratulations! The box is open now. 🥳🥳</span></strong>
+                </li>
+            </ol>
+
+            <div class="image-gallery">
+                <img src="img/pic_1.jpg" alt="Illustration of inserting the key into the box slot"
+                    class="instruction-img">
+
+                <img src="img/pic_2.jpg" alt="Illustration of lifting the box lid to open" class="instruction-img">
+            </div>
+
+        </div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
+                <path
+                    d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z">
+                </path>
+            </svg>
+            <span>Back</span>
+        </button>
+    </div>
+
+
+
+
+    <script>
+        // في ملف JavaScript (script.js)
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const steps = document.querySelectorAll('.opening-steps .step');
+            const buttons = document.querySelectorAll('.next-step-button');
+            let currentStepIndex = 0; // يبدأ من الخطوة 0 (step-1)
+
+            // دالة تحديث حالة القائمة
+            function updateStepsDisplay() {
+                steps.forEach((step, index) => {
+                    const button = step.querySelector('.next-step-button');
+
+                    // 1. إزالة كل الحالات قبل التعيين
+                    step.classList.remove('active', 'completed', 'not-completed');
+                    if (button) {
+                        button.style.display = 'none'; // إخفاء جميع الأزرار مبدئياً
+                    }
+
+                    // 2. تحديث الحالة حسب الموقع
+                    if (index < currentStepIndex) {
+                        // الخطوات السابقة: مكتملة
+                        step.classList.add('completed');
+                    } else if (index === currentStepIndex) {
+                        // الخطوة الحالية: نشطة
+                        step.classList.add('active');
+                        if (button) {
+                            button.style.display = 'inline-block'; // إظهار الزر للنشطة فقط
+                        }
+                    } else {
+                        // الخطوات التالية: مخفية
+                        step.classList.add('not-completed');
+                    }
+                });
+
+                // إذا تجاوزنا آخر خطوة → أظهر رسالة النهاية
+                if (currentStepIndex >= steps.length) {
+                    const finalMessage = document.querySelector('.final-message');
+                    if (finalMessage) {
+                        finalMessage.style.display = 'block';
+                    }
+                }
+            }
+
+            // دالة الانتقال للخطوة التالية
+            function goToNextStep() {
+                currentStepIndex++;
+                updateStepsDisplay();
+            }
+
+            // ربط الحدث بجميع الأزرار
+            buttons.forEach(button => {
+                button.addEventListener('click', goToNextStep);
+            });
+
+            // تهيئة عند التحميل
+            updateStepsDisplay();
+        });
+    </script>
+    <script>
+        const text = document.getElementById("final-message");
+        const chars = text.textContent.split("");
+        text.textContent = "";
+
+        chars.forEach((char, i) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            span.style.color = `hsl(${i * 30}, 80%, 50%)`;
+            text.appendChild(span);
+        });
+    </script>
+
+</body>
+
+</html>
