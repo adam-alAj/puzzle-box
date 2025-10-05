@@ -294,7 +294,9 @@ body {
 .final-message {
     display: inline-block;
     color: hsl(calc(360 / 11 * var(--i)), 80%, 50%);
-
+    direction: rtl;
+    /* يحدد اتجاه النص من اليمين لليسار */
+    text-align: right;
 }
 
 .emilys-candy-regular {
